@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+# full generated data and large artefacts regenerate deterministically (python run_pipeline.py)
+data/*.csv
+model/*.joblib
+model/oof_predictions.csv
+dashboard/data.json

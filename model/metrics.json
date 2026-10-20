@@ -1,0 +1,235 @@
+{
+  "n_rows": 23710,
+  "n_patients": 1200,
+  "positive_rate": 0.0449,
+  "variants": {
+    "ehr_only": {
+      "n_features": 27,
+      "auroc": 0.7084,
+      "auprc": 0.0956,
+      "brier": 0.04235,
+      "ece": 0.0104
+    },
+    "stream_only": {
+      "n_features": 32,
+      "auroc": 0.6754,
+      "auprc": 0.0977,
+      "brier": 0.04207,
+      "ece": 0.0072
+    },
+    "fused": {
+      "n_features": 59,
+      "auroc": 0.7257,
+      "auprc": 0.1107,
+      "brier": 0.04163,
+      "ece": 0.0053
+    },
+    "fused_plus_twin_state": {
+      "n_features": 75,
+      "auroc": 0.7088,
+      "auprc": 0.1062,
+      "brier": 0.04184,
+      "ece": 0.0068
+    },
+    "clinical_rules": {
+      "auroc": 0.6146,
+      "auprc": 0.0716
+    },
+    "fused_logistic": {
+      "auroc": 0.7172,
+      "auprc": 0.1062
+    }
+  },
+  "paired_deltas": {
+    "fused_vs_ehr_only": {
+      "delta": 0.0173,
+      "ci95": [
+        0.0041,
+        0.0319
+      ],
+      "p_value": 0.008
+    },
+    "fused_vs_stream_only": {
+      "delta": 0.0503,
+      "ci95": [
+        0.0336,
+        0.0656
+      ],
+      "p_value": 0.001
+    },
+    "fused_vs_fused_plus_twin_state": {
+      "delta": 0.0169,
+      "ci95": [
+        0.0066,
+        0.0276
+      ],
+      "p_value": 0.001
+    },
+    "fused_vs_fused_logistic": {
+      "delta": 0.0085,
+      "ci95": [
+        -0.0051,
+        0.0214
+      ],
+      "p_value": 0.226
+    },
+    "fused_vs_clinical_rules": {
+      "delta": 0.1111,
+      "ci95": [
+        0.0889,
+        0.1323
+      ],
+      "p_value": 0.001
+    }
+  },
+  "timing_pre_first_event": {
+    "ehr_only": {
+      "mean_within_patient_auroc": 0.5,
+      "n_patients": 309
+    },
+    "stream_only": {
+      "mean_within_patient_auroc": 0.5218,
+      "n_patients": 309
+    },
+    "fused": {
+      "mean_within_patient_auroc": 0.5567,
+      "n_patients": 309
+    },
+    "fused_plus_twin_state": {
+      "mean_within_patient_auroc": 0.5166,
+      "n_patients": 309
+    }
+  },
+  "controls": {
+    "label_permutation_auroc": 0.5154
+  },
+  "temporal_holdout": {
+    "train_days": "< 97 (labels fully observed before split)",
+    "test_days": ">= 111",
+    "n_test": 9495,
+    "fused_auroc": 0.6865,
+    "ehr_only_auroc": 0.6809
+  },
+  "event_types": {
+    "severe_hypoglycaemia": {
+      "positives": 133,
+      "fused_auroc": 0.9427,
+      "ehr_only_auroc": 0.9068,
+      "delta_vs_ehr": {
+        "delta": 0.0359,
+        "ci95": [
+          0.0153,
+          0.0587
+        ],
+        "p_value": 0.002
+      }
+    },
+    "hyperglycaemic_crisis": {
+      "positives": 260,
+      "fused_auroc": 0.8582,
+      "ehr_only_auroc": 0.8465,
+      "delta_vs_ehr": {
+        "delta": 0.0117,
+        "ci95": [
+          -0.0054,
+          0.0296
+        ],
+        "p_value": 0.164
+      }
+    },
+    "hypertensive_emergency": {
+      "positives": 209,
+      "fused_auroc": 0.888,
+      "ehr_only_auroc": 0.8839,
+      "delta_vs_ehr": {
+        "delta": 0.0041,
+        "ci95": [
+          -0.0093,
+          0.0186
+        ],
+        "p_value": 0.564
+      }
+    },
+    "acute_cv_event": {
+      "positives": 478,
+      "fused_auroc": 0.7113,
+      "ehr_only_auroc": 0.7162,
+      "delta_vs_ehr": {
+        "delta": -0.0049,
+        "ci95": [
+          -0.0229,
+          0.0104
+        ],
+        "p_value": 0.544
+      }
+    }
+  },
+  "operating_point": {
+    "alert_budget_per_patient_week": 0.1,
+    "threshold": 0.0941,
+    "sensitivity": 0.291,
+    "ppv": 0.131,
+    "base_rate": 0.0449,
+    "lift_over_base_rate": 2.91,
+    "median_lead_time_days": 7.0
+  },
+  "operating_point_rules": {
+    "alert_budget_per_patient_week": 0.1,
+    "threshold": 1.25,
+    "sensitivity": 0.239,
+    "ppv": 0.108,
+    "base_rate": 0.0449,
+    "lift_over_base_rate": 2.39,
+    "median_lead_time_days": 7.0
+  },
+  "reliability": [
+    {
+      "mean_pred": 0.0072,
+      "observed": 0.0072
+    },
+    {
+      "mean_pred": 0.0116,
+      "observed": 0.0131
+    },
+    {
+      "mean_pred": 0.0158,
+      "observed": 0.0152
+    },
+    {
+      "mean_pred": 0.0204,
+      "observed": 0.0236
+    },
+    {
+      "mean_pred": 0.0256,
+      "observed": 0.0346
+    },
+    {
+      "mean_pred": 0.0321,
+      "observed": 0.0333
+    },
+    {
+      "mean_pred": 0.0409,
+      "observed": 0.0515
+    },
+    {
+      "mean_pred": 0.0537,
+      "observed": 0.0569
+    },
+    {
+      "mean_pred": 0.0765,
+      "observed": 0.0831
+    },
+    {
+      "mean_pred": 0.1473,
+      "observed": 0.1307
+    }
+  ],
+  "runtime_seconds": 355.8,
+  "config": {
+    "n_patients": 1200,
+    "days": 180,
+    "seed": 2026,
+    "horizon_days": 14,
+    "folds": 5
+  }
+}

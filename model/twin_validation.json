@@ -1,0 +1,73 @@
+{
+  "glucose": {
+    "n_patients": 292,
+    "prior_corr_with_truth": 0.0,
+    "prior_mae_multiplier": 0.247,
+    "checkpoints": [
+      {
+        "week": 4.0,
+        "corr_with_truth": 0.345,
+        "mae_multiplier": 0.262,
+        "mean_posterior_sd_units": 20.77
+      },
+      {
+        "week": 8.0,
+        "corr_with_truth": 0.519,
+        "mae_multiplier": 0.244,
+        "mean_posterior_sd_units": 16.59
+      },
+      {
+        "week": 13.0,
+        "corr_with_truth": 0.594,
+        "mae_multiplier": 0.233,
+        "mean_posterior_sd_units": 13.71
+      },
+      {
+        "week": 25.7,
+        "corr_with_truth": 0.638,
+        "mae_multiplier": 0.226,
+        "mean_posterior_sd_units": 10.18
+      }
+    ]
+  },
+  "blood_pressure": {
+    "n_patients": 478,
+    "prior_corr_with_truth": 0.0,
+    "prior_mae_multiplier": 0.271,
+    "checkpoints": [
+      {
+        "week": 4.0,
+        "corr_with_truth": 0.287,
+        "mae_multiplier": 0.273,
+        "mean_posterior_sd_units": 6.08
+      },
+      {
+        "week": 8.0,
+        "corr_with_truth": 0.297,
+        "mae_multiplier": 0.29,
+        "mean_posterior_sd_units": 5.58
+      },
+      {
+        "week": 13.0,
+        "corr_with_truth": 0.397,
+        "mae_multiplier": 0.281,
+        "mean_posterior_sd_units": 5.17
+      },
+      {
+        "week": 25.7,
+        "corr_with_truth": 0.535,
+        "mae_multiplier": 0.263,
+        "mean_posterior_sd_units": 4.4
+      }
+    ]
+  },
+  "predictive_calibration": {
+    "glucose_z_mean": 0.066,
+    "glucose_z_sd": 0.981,
+    "glucose_within_2sd": 0.953,
+    "sbp_z_mean": -0.025,
+    "sbp_z_sd": 0.891,
+    "sbp_within_2sd": 0.974,
+    "note": "A calibrated twin has z mean ~0, sd ~1 and ~95% of readings within 2 sd."
+  }
+}

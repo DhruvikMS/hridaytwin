@@ -1,0 +1,57 @@
+{
+  "per_seed": [
+    {
+      "seed": 2026,
+      "n_rows": 23710,
+      "positive_rate": 0.0449,
+      "ehr_only_auroc": 0.7084,
+      "fused_auroc": 0.7257,
+      "fused_plus_twin_state_auroc": 0.7088,
+      "fused_minus_ehr": 0.0173,
+      "timing_fused": 0.5567
+    },
+    {
+      "seed": 11,
+      "n_rows": 23740,
+      "positive_rate": 0.0436,
+      "ehr_only_auroc": 0.7163,
+      "fused_auroc": 0.7281,
+      "fused_plus_twin_state_auroc": 0.7342,
+      "fused_minus_ehr": 0.0118,
+      "timing_fused": 0.5126
+    },
+    {
+      "seed": 37,
+      "n_rows": 23747,
+      "positive_rate": 0.0422,
+      "ehr_only_auroc": 0.7174,
+      "fused_auroc": 0.7256,
+      "fused_plus_twin_state_auroc": 0.7209,
+      "fused_minus_ehr": 0.0082,
+      "timing_fused": 0.5808
+    }
+  ],
+  "summary": {
+    "ehr_only_auroc": {
+      "mean": 0.714,
+      "sd": 0.0049
+    },
+    "fused_auroc": {
+      "mean": 0.7265,
+      "sd": 0.0014
+    },
+    "fused_plus_twin_state_auroc": {
+      "mean": 0.7213,
+      "sd": 0.0127
+    },
+    "fused_minus_ehr": {
+      "mean": 0.0124,
+      "sd": 0.0046
+    },
+    "timing_fused": {
+      "mean": 0.55,
+      "sd": 0.0346
+    },
+    "fused_beats_ehr_in": "3/3 seeds"
+  }
+}

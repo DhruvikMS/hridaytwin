@@ -1,0 +1,1252 @@
+{
+ "resourceType": "Bundle",
+ "type": "collection",
+ "entry": [
+  {
+   "resource": {
+    "resourceType": "Patient",
+    "id": "HT00303",
+    "gender": "male",
+    "extension": [
+     {
+      "url": "urn:hridaytwin:age-years",
+      "valueInteger": 71
+     },
+     {
+      "url": "urn:hridaytwin:region",
+      "valueString": "East"
+     }
+    ]
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Condition",
+    "id": "HT00303-t2d",
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "active"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "44054006",
+       "display": "Diabetes mellitus type 2"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Condition",
+    "id": "HT00303-prior_cvd",
+    "clinicalStatus": {
+     "coding": [
+      {
+       "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+       "code": "active"
+      }
+     ]
+    },
+    "code": {
+     "coding": [
+      {
+       "system": "http://snomed.info/sct",
+       "code": "49601007",
+       "display": "Disorder of cardiovascular system"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-hba1c",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "4548-4",
+       "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-04-04",
+    "valueQuantity": {
+     "value": 8.0,
+     "unit": "%",
+     "system": "http://unitsofmeasure.org",
+     "code": "%"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-ldl",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "13457-7",
+       "display": "Cholesterol in LDL [Mass/volume] in Serum or Plasma by calculation"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-04-04",
+    "valueQuantity": {
+     "value": 57.0,
+     "unit": "mg/dL",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/dL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-egfr",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "62238-1",
+       "display": "Glomerular filtration rate/1.73 sq M.predicted (CKD-EPI)"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-04-04",
+    "valueQuantity": {
+     "value": 65.0,
+     "unit": "mL/min/{1.73_m2}",
+     "system": "http://unitsofmeasure.org",
+     "code": "mL/min/{1.73_m2}"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-uacr",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "laboratory"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "9318-7",
+       "display": "Albumin/Creatinine [Mass Ratio] in Urine"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-04-04",
+    "valueQuantity": {
+     "value": 130.5,
+     "unit": "mg/g",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/g"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-bmi",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "39156-5",
+       "display": "Body mass index (BMI) [Ratio]"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-04-04",
+    "valueQuantity": {
+     "value": 30.0,
+     "unit": "kg/m2",
+     "system": "http://unitsofmeasure.org",
+     "code": "kg/m2"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-waist_cm",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "8280-0",
+       "display": "Waist Circumference at umbilicus by Tape measure"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-04-04",
+    "valueQuantity": {
+     "value": 105.0,
+     "unit": "cm",
+     "system": "http://unitsofmeasure.org",
+     "code": "cm"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-sbp_clinic",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "8480-6",
+       "display": "Systolic blood pressure"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-04-04",
+    "valueQuantity": {
+     "value": 127.0,
+     "unit": "mm[Hg]",
+     "system": "http://unitsofmeasure.org",
+     "code": "mm[Hg]"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "MedicationStatement",
+    "id": "HT00303-med_metformin",
+    "status": "active",
+    "medicationCodeableConcept": {
+     "text": "Metformin"
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "MedicationStatement",
+    "id": "HT00303-med_sulfonylurea",
+    "status": "active",
+    "medicationCodeableConcept": {
+     "text": "Sulfonylurea (e.g. gliclazide)"
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-glucose-174",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "2339-0",
+       "display": "Glucose [Mass/volume] in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-25",
+    "valueQuantity": {
+     "value": 227.0,
+     "unit": "mg/dL",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/dL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-rhr-174",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "40443-4",
+       "display": "Heart rate --resting"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-25",
+    "valueQuantity": {
+     "value": 72.6,
+     "unit": "/min",
+     "system": "http://unitsofmeasure.org",
+     "code": "/min"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-steps-174",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "55423-8",
+       "display": "Number of steps in unspecified time Pedometer"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-25",
+    "valueQuantity": {
+     "value": 12907.0,
+     "unit": "{steps}",
+     "system": "http://unitsofmeasure.org",
+     "code": "{steps}"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-sleep_h-174",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "93832-4",
+       "display": "Sleep duration"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-25",
+    "valueQuantity": {
+     "value": 6.45,
+     "unit": "h",
+     "system": "http://unitsofmeasure.org",
+     "code": "h"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-weight_kg-174",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "29463-7",
+       "display": "Body weight"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-25",
+    "valueQuantity": {
+     "value": 79.2,
+     "unit": "kg",
+     "system": "http://unitsofmeasure.org",
+     "code": "kg"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-glucose-175",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "2339-0",
+       "display": "Glucose [Mass/volume] in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-26",
+    "valueQuantity": {
+     "value": 193.0,
+     "unit": "mg/dL",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/dL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-rhr-175",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "40443-4",
+       "display": "Heart rate --resting"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-26",
+    "valueQuantity": {
+     "value": 70.3,
+     "unit": "/min",
+     "system": "http://unitsofmeasure.org",
+     "code": "/min"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-steps-175",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "55423-8",
+       "display": "Number of steps in unspecified time Pedometer"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-26",
+    "valueQuantity": {
+     "value": 11393.0,
+     "unit": "{steps}",
+     "system": "http://unitsofmeasure.org",
+     "code": "{steps}"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-sleep_h-175",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "93832-4",
+       "display": "Sleep duration"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-26",
+    "valueQuantity": {
+     "value": 6.28,
+     "unit": "h",
+     "system": "http://unitsofmeasure.org",
+     "code": "h"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-weight_kg-175",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "29463-7",
+       "display": "Body weight"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-26",
+    "valueQuantity": {
+     "value": 79.2,
+     "unit": "kg",
+     "system": "http://unitsofmeasure.org",
+     "code": "kg"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-glucose-176",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "2339-0",
+       "display": "Glucose [Mass/volume] in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-27",
+    "valueQuantity": {
+     "value": 184.0,
+     "unit": "mg/dL",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/dL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-rhr-176",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "40443-4",
+       "display": "Heart rate --resting"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-27",
+    "valueQuantity": {
+     "value": 75.8,
+     "unit": "/min",
+     "system": "http://unitsofmeasure.org",
+     "code": "/min"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-steps-176",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "55423-8",
+       "display": "Number of steps in unspecified time Pedometer"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-27",
+    "valueQuantity": {
+     "value": 9623.0,
+     "unit": "{steps}",
+     "system": "http://unitsofmeasure.org",
+     "code": "{steps}"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-sleep_h-176",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "93832-4",
+       "display": "Sleep duration"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-27",
+    "valueQuantity": {
+     "value": 7.04,
+     "unit": "h",
+     "system": "http://unitsofmeasure.org",
+     "code": "h"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-glucose-177",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "2339-0",
+       "display": "Glucose [Mass/volume] in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-28",
+    "valueQuantity": {
+     "value": 194.0,
+     "unit": "mg/dL",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/dL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-rhr-177",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "40443-4",
+       "display": "Heart rate --resting"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-28",
+    "valueQuantity": {
+     "value": 73.5,
+     "unit": "/min",
+     "system": "http://unitsofmeasure.org",
+     "code": "/min"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-steps-177",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "55423-8",
+       "display": "Number of steps in unspecified time Pedometer"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-28",
+    "valueQuantity": {
+     "value": 9909.0,
+     "unit": "{steps}",
+     "system": "http://unitsofmeasure.org",
+     "code": "{steps}"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-sleep_h-177",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "93832-4",
+       "display": "Sleep duration"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-28",
+    "valueQuantity": {
+     "value": 5.82,
+     "unit": "h",
+     "system": "http://unitsofmeasure.org",
+     "code": "h"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-weight_kg-177",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "29463-7",
+       "display": "Body weight"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-28",
+    "valueQuantity": {
+     "value": 79.1,
+     "unit": "kg",
+     "system": "http://unitsofmeasure.org",
+     "code": "kg"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-glucose-179",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "2339-0",
+       "display": "Glucose [Mass/volume] in Blood"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-30",
+    "valueQuantity": {
+     "value": 176.0,
+     "unit": "mg/dL",
+     "system": "http://unitsofmeasure.org",
+     "code": "mg/dL"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-rhr-179",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "40443-4",
+       "display": "Heart rate --resting"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-30",
+    "valueQuantity": {
+     "value": 74.8,
+     "unit": "/min",
+     "system": "http://unitsofmeasure.org",
+     "code": "/min"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-steps-179",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "55423-8",
+       "display": "Number of steps in unspecified time Pedometer"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-30",
+    "valueQuantity": {
+     "value": 8816.0,
+     "unit": "{steps}",
+     "system": "http://unitsofmeasure.org",
+     "code": "{steps}"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "Observation",
+    "id": "HT00303-sleep_h-179",
+    "status": "final",
+    "category": [
+     {
+      "coding": [
+       {
+        "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+        "code": "vital-signs"
+       }
+      ]
+     }
+    ],
+    "code": {
+     "coding": [
+      {
+       "system": "http://loinc.org",
+       "code": "93832-4",
+       "display": "Sleep duration"
+      }
+     ]
+    },
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "effectiveDateTime": "2026-09-30",
+    "valueQuantity": {
+     "value": 6.38,
+     "unit": "h",
+     "system": "http://unitsofmeasure.org",
+     "code": "h"
+    }
+   }
+  },
+  {
+   "resource": {
+    "resourceType": "RiskAssessment",
+    "id": "HT00303-risk",
+    "status": "preliminary",
+    "subject": {
+     "reference": "Patient/HT00303"
+    },
+    "occurrenceDateTime": "2026-09-30",
+    "method": {
+     "text": "HridayTwin fused EHR + wearable model (research PoC, synthetic training data)"
+    },
+    "prediction": [
+     {
+      "outcome": {
+       "text": "any adverse cardiometabolic event"
+      },
+      "probabilityDecimal": 0.0601,
+      "whenPeriod": {
+       "start": "2026-09-30",
+       "end": "2026-10-14"
+      }
+     },
+     {
+      "outcome": {
+       "text": "severe hypoglycaemia"
+      },
+      "probabilityDecimal": 0.0003,
+      "whenPeriod": {
+       "start": "2026-09-30",
+       "end": "2026-10-14"
+      }
+     },
+     {
+      "outcome": {
+       "text": "hyperglycaemic crisis"
+      },
+      "probabilityDecimal": 0.0014,
+      "whenPeriod": {
+       "start": "2026-09-30",
+       "end": "2026-10-14"
+      }
+     },
+     {
+      "outcome": {
+       "text": "hypertensive emergency"
+      },
+      "probabilityDecimal": 0.0004,
+      "whenPeriod": {
+       "start": "2026-09-30",
+       "end": "2026-10-14"
+      }
+     },
+     {
+      "outcome": {
+       "text": "acute cv event"
+      },
+      "probabilityDecimal": 0.0994,
+      "whenPeriod": {
+       "start": "2026-09-30",
+       "end": "2026-10-14"
+      }
+     }
+    ],
+    "note": [
+     {
+      "text": "Decision support only. Requires clinician review."
+     }
+    ]
+   }
+  }
+ ]
+}
